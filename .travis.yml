@@ -1,5 +1,6 @@
 arch:
   - ppc64le
+os: linux
 language: python
 python:
   - "2.7"
