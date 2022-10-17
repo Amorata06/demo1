@@ -7,7 +7,9 @@ language: python
 python:
   - "3.6"
 before_install:
-    - docker pull alpine 
+  - docker pull alpine 
+install:
+  - docker build -t hello-py .
 build:
    dockerfile: Dockerfile
 script: 
