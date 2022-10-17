@@ -13,6 +13,6 @@ install:
 build:
    dockerfile: Dockerfile
 script: 
-  - docker run -d hello-py
-  - docker ps -a
+  - docker images
+  - docker run hello-py
   
