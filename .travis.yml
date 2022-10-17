@@ -3,8 +3,8 @@ arch:
 os: linux
 language: python
 python:
-  - "3.5"
+  - "2.7"
 brfore_install:
-  - python3 -m pip install 
+  - python -m pip install 
 script: 
   - print("Hello World")
