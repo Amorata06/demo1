@@ -1,6 +1,15 @@
 FROM python:3.7-alpine
-RUN apk-install python
-ADD . /app
-WORKDIR /app
-CMD python -m SimpleHTTPServer 5000
+RUN apt-get update
+RUN apt-get install -y python3 python3-pip apt-utils
+
+LABEL app=hello-python-app
+
+MAINTAINER Amorata
+
+COPY hello.py /
+
+WORKDIR /
+
+ENV ADMIN_USER="Amorata"
+
 EXPOSE 5000
