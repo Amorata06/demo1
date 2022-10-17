@@ -9,7 +9,7 @@ python:
 before_install:
   - docker pull alpine 
 install:
-  - docker build -t hello-py Dockerfile/
+  - docker build -t hello-py Dockerfiles/
 build:
    dockerfile: Dockerfile
 script: 
