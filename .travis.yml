@@ -3,8 +3,6 @@ arch:
 os: linux
 language: python
 python:
-  - "2.7.18"
-before_install:
-  - python -m pip install 
+  - "3.6"
 script: 
   - print("Hello World")
