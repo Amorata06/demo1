@@ -11,7 +11,8 @@ before_install:
 build:
    dockerfile: Dockerfiles
 script: 
-  - docker build -t hello-py Dockerfiles .
+  - docker build -t hello-py Dockerfiles 
   - docker images
   - docker run hello-py
+  - python hello.py
   
