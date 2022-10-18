@@ -6,8 +6,6 @@ COPY hello.py /
 
 WORKDIR /
 
-CMD["python" , "hello.py"]
-
 ENV ADMIN_USER="Amorata"
 
 
