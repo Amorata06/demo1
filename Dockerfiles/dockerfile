@@ -8,6 +8,4 @@ WORKDIR /
 
 ENV ADMIN_USER="Amorata"
 
-RUN hello.py
-
 
