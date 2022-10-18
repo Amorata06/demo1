@@ -3,7 +3,7 @@ arch:
 os: linux
 services:
   - docker
-  - build: ./Dockerfiles
+  - build:./Dockerfiles
 language: python
 python:
   - "3.6"
