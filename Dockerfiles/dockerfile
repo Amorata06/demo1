@@ -8,4 +8,6 @@ WORKDIR /
 
 ENV ADMIN_USER="Amorata"
 
+CMD python "hello.py"
+
 
