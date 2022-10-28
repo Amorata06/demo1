@@ -1,9 +1,9 @@
 arch:
+  - amd64
   - ppc64le
 os: linux
 services:
   - docker
-  - build:./Dockerfiles
 language: python
 python:
   - "3.6"
