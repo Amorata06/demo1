@@ -20,8 +20,8 @@ yum install -y gcc gcc-c++ wget && \
     tar -C /usr/local -xzf go$GO_VERSION.linux-ppc64le.tar.gz && \
     rm -rf go$GO_VERSION.linux-ppc64le.tar.gz
 
-mkdir -p $GOPATH/src/github.com/grafana/
-cd $GOPATH/src/github.com/grafana/
+mkdir -p $GOPATH/src/github.com/
+cd $GOPATH/src/github.com/
 git clone https://github.com/grafana/grafana.git
 cd grafana
 git checkout $PACKAGE_VERSION
