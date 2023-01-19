@@ -1,13 +1,13 @@
 #!/bin/bash -e
 # ----------------------------------------------------------------------------
 # Package          : grafana
-# Version          : v9.1.6
+# Version          : v9.3.2
 # Source repo      : https://github.com/grafana/grafana.git
 # Tested on        : UBI 8.5
 # Language         : Go
 # Disclaimer       : This script has been tested in root mode on given
 # ==========         platform using the mentioned version of the package.
-#                    contact "Maintainer" of this script.
+#                    
 #
 # ----------------------------------------------------------------------------
 
@@ -41,7 +41,8 @@ git checkout $PACKAGE_VERSION
 #git describe --abbrev=0
 
 yarn install 
-make gen-go
+yarn build
+go mod verify
 go run build.go build
 go test -v ./pkg/...
 yarn test --watchAll
