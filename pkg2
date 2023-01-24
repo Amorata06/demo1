@@ -27,8 +27,8 @@ go get github.com/google/go-jsonnet/cmd/jsonnet
 
 mkdir -p $GOPATH/src/github.com/grafana/
 cd $GOPATH/src/github.com/grafana/
-git clone $PACKAGE_URL
-cd $PACKAGE_NAME
+git clone https://github.com/grafana/mimir.git
+cd mimir
 git checkout $PACKAGE_VERSION
 
 go mod tidy
