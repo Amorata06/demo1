@@ -23,9 +23,7 @@ tar -C /usr/local -xzf go$GO_VERSION.linux-ppc64le.tar.gz && \
 rm -rf go$GO_VERSION.linux-ppc64le.tar.gz
 
 yum install -y git golang
-go get $PACKAGE_NAME@$PACKAGE_VERSION
-cd ~/go/pkg/mod/github.com/grafana/mimir
-
+go get github.com/google/go-jsonnet/cmd/jsonnet
 
 mkdir -p $GOPATH/src/github.com/grafana/
 cd $GOPATH/src/github.com/grafana/
@@ -34,8 +32,5 @@ cd $PACKAGE_NAME
 git checkout $PACKAGE_VERSION
 
 go mod tidy
-go install
-go test
-
-
+go test ./... -cover -v 
 exit 0
