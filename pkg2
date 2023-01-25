@@ -1,3 +1,16 @@
+#!/bin/bash -e
+# ----------------------------------------------------------------------------
+# Package          : grafana/mimir
+# Version          : mimir-2.5.0
+# Source repo      : https://github.com/grafana/mimir.git
+# Tested on        : UBI 8.5
+# Language         : Go
+# Disclaimer       : This script has been tested in root mode on given
+# ==========         platform using the mentioned version of the package.
+#                    
+#
+# ----------------------------------------------------------------------------
+
 PACKAGE_NAME="github.com/grafana/mimir"
 PACKAGE_VERSION="${1:-mimir-2.5.0}"
 PACKAGE_URL="https://github.com/grafana/mimir.git"
